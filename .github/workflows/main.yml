@@ -3,10 +3,10 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main   # Change if your default branch is not main
+      - main
 
 permissions:
-  contents: write  # Needed to push to gh-pages branch
+  contents: write
 
 jobs:
   deploy:
@@ -29,6 +29,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material
 
-      # 4. Deploy to GitHub Pages
+      - name: Debug mkdocs.yml
+        run: |
+          echo "==== mkdocs.yml ===="
+          cat mkdocs.yml
+
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --clean --force
