@@ -26,15 +26,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
-      - name: Debug MkDocs Installation
-        run: |
-          pip list | grep mkdocs
-          mkdocs --version
-
-      - name: Debug mkdocs.yml
-        run: |
-          echo "==== mkdocs.yml ===="
-          cat mkdocs.yml
-
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --clean --force --verbose
+        run: mkdocs gh-deploy --clean --force
