@@ -8,8 +8,7 @@ theme:
     primary: indigo
     accent: indigo
 
-# Optional, but explicit is better:
 docs_dir: docs
 
 nav:
-  - Home: docs/index.md
+  - Home: index.md
