@@ -9,6 +9,9 @@ theme:
     primary: indigo
     accent: indigo
 
+  features:
+    - content.code.copy 
+
 docs_dir: docs
 
 nav:
