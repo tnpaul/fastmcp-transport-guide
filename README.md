@@ -1,6 +1,6 @@
 # FastMCP Transport Guide
 
-A concise guide to different transport options in [FastMCP](https://github.com/modelcontextprotocol/fastmcp) (stdio, HTTP, SSE) with Python code examples for server and client.
+A concise guide to different transport options in [FastMCP](https://github.com/jlowin/fastmcp) (stdio, HTTP, SSE) with Python code examples for server and client.
 
 📖 **[Read the full guide →](./docs/index.md)**
 

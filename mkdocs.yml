@@ -1,0 +1,10 @@
+site_name: FastMCP Transport Guide
+site_description: "A concise guide to FastMCP transports (stdio, http, sse) with code examples"
+repo_url: https://github.com/tnpaul/fastmcp-transport-guide
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+nav:
+  - Home: docs/index.md
